@@ -1,0 +1,7 @@
+parameters:
+
+
+database:
+	dsn: 'mysql:host=database;dbname=rest-api'
+	user: test
+	password: test
