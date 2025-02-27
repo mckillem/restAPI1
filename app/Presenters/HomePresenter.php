@@ -17,9 +17,9 @@ final class HomePresenter extends Nette\Application\UI\Presenter
 		$this->todo = $todo;
 	}
 
-	public function renderDefault(): void
+	public function renderGetAll(): void
 	{
-		$this->template->todos = $this->todo->getAllTodos();
+		echo json_encode($this->todo->getAllTodos());
 	}
 
 	protected function createComponentTodoForm(): Form
